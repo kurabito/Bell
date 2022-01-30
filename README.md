@@ -1,1 +1,2 @@
-# Bell - a program to test features of Q#.
+# Bell
+A program to test features of Q#.

@@ -25,6 +25,12 @@ namespace Bell {
             SetQubitState(initial, q1);
             SetQubitState(Zero, q2);
             
+            // Set q1 to superposition
+            H(q1);
+
+            // entangle
+            CNOT(q1, q2);
+            
             // measure each qubit
             let resultQ1 = M(q1);            
             let resultQ2 = M(q2);           
